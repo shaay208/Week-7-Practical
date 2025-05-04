@@ -20,3 +20,10 @@ bool Vector3D::operator!=(const Vector3D& other) const {
 Vector3D Vector3D::operator+(const Vector3D& other) const {
 	return Vector3D(x + other.x, y + other.y, z + other.z);
 }
+
+float Vector3D::distanceTo(const Vector3D& other) const {
+	float dx = x - other.x;
+	float dy = y - other.y;
+	float dz = z - other.z;
+	return std::sqrt(dx * dx + dy * dy + dz * dz);
+}
