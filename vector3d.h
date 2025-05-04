@@ -11,4 +11,9 @@ public:
     float getX() const;
     float getY() const;
     float getZ() const;
+
+    bool operator==(const Vector3D& other) const;
+    bool operator!=(const Vector3D& other) const;
+    Vector3D operator+(const Vector3D& other) const;
+
 };
