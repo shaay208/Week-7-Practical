@@ -1,8 +1,14 @@
-﻿// CMakeProject1.h : Include file for standard system include files,
-// or project specific include files.
+﻿#pragma once
 
-#pragma once
+class Vector3D {
+private:
+    float x, y, z;
 
-#include <iostream>
+public:
+    Vector3D(float x = 0, float y = 0, float z = 0);
+    Vector3D(const Vector3D& other);
 
-// TODO: Reference additional headers your program requires here.
+    float getX() const;
+    float getY() const;
+    float getZ() const;
+};

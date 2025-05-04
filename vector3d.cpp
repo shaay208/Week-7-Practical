@@ -1,12 +1,9 @@
-﻿// CMakeProject1.cpp : Defines the entry point for the application.
-//
+﻿#include "vector3d.h"
 
-#include "CMakeProject1.h"
+Vector3D::Vector3D(float x, float y, float z) : x(x), y(y), z(z) {}
 
-using namespace std;
+Vector3D::Vector3D(const Vector3D& other) : x(other.x), y(other.y), z(other.z) {}
 
-int main()
-{
-	cout << "Hello CMake." << endl;
-	return 0;
-}
+float Vector3D::getX() const { return x; }
+float Vector3D::getY() const { return y; }
+float Vector3D::getZ() const { return z; }
