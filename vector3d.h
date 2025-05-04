@@ -16,4 +16,6 @@ public:
     bool operator!=(const Vector3D& other) const;
     Vector3D operator+(const Vector3D& other) const;
     float distanceTo(const Vector3D& other) const;
+
+    Vector3D& operator=(const Vector3D& other) = delete;
 };
